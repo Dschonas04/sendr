@@ -1,5 +1,7 @@
 # Sendr
 
+<img src="docs/logo.svg" alt="" width="96" align="right">
+
 [![Check](https://github.com/Dschonas04/sendr/actions/workflows/check.yml/badge.svg)](https://github.com/Dschonas04/sendr/actions/workflows/check.yml)
 [![Release](https://img.shields.io/github/v/release/Dschonas04/sendr)](https://github.com/Dschonas04/sendr/releases/latest)
 [![Go](https://img.shields.io/github/go-mod/go-version/Dschonas04/sendr)](go.mod)
