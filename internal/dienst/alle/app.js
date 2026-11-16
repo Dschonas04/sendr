@@ -150,7 +150,7 @@ el("senden").onclick = async () => {
   melden("sendeHinweis", "übergebe an den Dienst …");
   try {
     const raus = await hole("/api/senden", { method: "POST", body: form });
-    melden("sendeHinweis", `${raus.eingereiht.length} Datei(en) eingereiht — der Dienst überträgt weiter, auch wenn du dieses Fenster schließt.`);
+    melden("sendeHinweis", `${raus.eingereiht.length} Datei(en) eingereiht: der Dienst überträgt weiter, auch wenn du dieses Fenster schließt.`);
     dateienMerken([]);
     el("auswahl").value = "";
     await laden();

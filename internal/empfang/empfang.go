@@ -1,6 +1,6 @@
 // Package empfang is the receiving half. It writes incoming data into a partial file next
 // to a journal entry, so an interrupted transfer can be picked up at the exact byte it
-// stopped at — after a dropped connection, a killed process or a power cut.
+// stopped at: after a dropped connection, a killed process or a power cut.
 package empfang
 
 import (

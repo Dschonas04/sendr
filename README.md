@@ -7,7 +7,7 @@
 [![Go](https://img.shields.io/github/go-mod/go-version/Dschonas04/sendr)](go.mod)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-Send files to another computer on the same network. No cloud, no account, no size limit —
+Send files to another computer on the same network. No cloud, no account, no size limit:
 the two machines talk to each other directly, and a transfer that breaks off picks up where
 it stopped instead of starting over.
 
@@ -20,7 +20,7 @@ a plain binary for Linux. Nothing to install, nothing to configure.
    start it. A page opens in your browser.
 2. Do the same on the other computer.
 3. Both pages now list the other device. Pick it, choose your files, press **Senden**.
-4. The first transfer to a device asks for that device's six-digit code — it is shown at the
+4. The first transfer to a device asks for that device's six-digit code: it is shown at the
    top right of its page. It is remembered afterwards.
 
 The receiving side asks before it accepts anything, unless you switch that off in the
@@ -50,7 +50,7 @@ Interruptions are the normal case on a home network, so the design assumes them:
   certificate's fingerprint. A sender refuses to talk to a device whose certificate does
   not match, so nothing on the network can slip in between.
 - Every request carries the receiving side's six-digit code, compared in constant time.
-  Without it the answer is 403, and **after five wrong codes the address has to wait** —
+  Without it the answer is 403, and **after five wrong codes the address has to wait**:
   30 seconds, doubling per further miss up to 15 minutes. That takes guessing a million
   combinations off the table.
 - The user interface listens on 127.0.0.1 only, refuses requests carrying any other
@@ -97,7 +97,7 @@ sendr -name "Büro-PC" -ziel /srv/eingang
 
 ## First start warnings
 
-Both systems warn about software they have not seen signed before. This is expected — the
+Both systems warn about software they have not seen signed before. This is expected, the
 releases are built by GitHub Actions and not signed with a paid certificate.
 
 - **Windows:** SmartScreen → *More info* → *Run anyway*.

@@ -190,7 +190,7 @@ func sendenBefehl(ctx context.Context, einst *einstellungen.Einstellungen, liste
 				default:
 					grund := ""
 					if e.Meldung != "" {
-						grund = " — " + e.Meldung
+						grund = " - " + e.Meldung
 					}
 					fmt.Printf("\r%s: %d%% (%s%s)        ", e.Name, int(100*e.Anteil()), e.Zustand, grund)
 				}
